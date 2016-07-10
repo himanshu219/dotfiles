@@ -1,0 +1,22 @@
+[user]
+	email = hp.iiita@gmail.com
+	name = Himanshu Pal
+
+[fetch]
+    prune = true
+
+
+[core]
+    excludesfile = ~/.gitignore
+
+
+[tig]
+    line-graphics = "utf-8"
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[format]
+    pretty = "Commit:  %C(yellow)%H%nAuthor:  %C(green)%aN <%aE>%nDate:    (%C(red)%ar%Creset) %ai%nSubject: %s%n%n%b"

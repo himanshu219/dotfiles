@@ -1,0 +1,98 @@
+<keymap version="1" name="Default copy" parent="$default">
+  <action id="Back">
+    <mouse-shortcut keystroke="button4" />
+    <keyboard-shortcut first-keystroke="alt PERIOD" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="control F4" />
+    <keyboard-shortcut first-keystroke="alt E" />
+  </action>
+  <action id="CollapseRegion">
+    <keyboard-shortcut first-keystroke="alt CLOSE_BRACKET" />
+  </action>
+  <action id="Diff.HighlightMode">
+    <keyboard-shortcut first-keystroke="alt H" />
+  </action>
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="alt D" />
+  </action>
+  <action id="EditorMatchBrace">
+    <keyboard-shortcut first-keystroke="alt M" />
+  </action>
+  <action id="EditorSelectLine">
+    <keyboard-shortcut first-keystroke="alt L" />
+  </action>
+  <action id="EditorToggleColumnMode">
+    <keyboard-shortcut first-keystroke="shift alt INSERT" />
+    <keyboard-shortcut first-keystroke="shift alt Q" />
+  </action>
+  <action id="EvaluateExpression">
+    <keyboard-shortcut first-keystroke="F8" />
+  </action>
+  <action id="ExpandRegion">
+    <keyboard-shortcut first-keystroke="alt OPEN_BRACKET" />
+  </action>
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="alt U" />
+  </action>
+  <action id="QuickEvaluateExpression">
+    <keyboard-shortcut first-keystroke="shift F8" />
+  </action>
+  <action id="QuickJavaDoc">
+    <keyboard-shortcut first-keystroke="control Q" />
+    <mouse-shortcut keystroke="alt button2" />
+    <keyboard-shortcut first-keystroke="alt I" />
+  </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="alt F" />
+  </action>
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift F6" />
+    <keyboard-shortcut first-keystroke="shift UNDEFINED" />
+  </action>
+  <action id="ShowBookmarks" />
+  <action id="ShowUsages">
+    <keyboard-shortcut first-keystroke="control alt F7" />
+    <keyboard-shortcut first-keystroke="shift alt U" />
+  </action>
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="control alt SLASH" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="control alt COMMA" />
+  </action>
+  <action id="StepInto">
+    <keyboard-shortcut first-keystroke="F11" />
+  </action>
+  <action id="StepOut">
+    <keyboard-shortcut first-keystroke="shift F11" />
+  </action>
+  <action id="StepOver">
+    <keyboard-shortcut first-keystroke="F10" />
+  </action>
+  <action id="SwitchApply">
+    <keyboard-shortcut first-keystroke="shift alt ENTER" />
+  </action>
+  <action id="SwitchDown">
+    <keyboard-shortcut first-keystroke="shift alt DOWN" />
+  </action>
+  <action id="SwitchLeft">
+    <keyboard-shortcut first-keystroke="shift alt LEFT" />
+  </action>
+  <action id="SwitchRight">
+    <keyboard-shortcut first-keystroke="shift alt RIGHT" />
+  </action>
+  <action id="SwitchUp">
+    <keyboard-shortcut first-keystroke="shift alt UP" />
+  </action>
+  <action id="ToggleBookmark" />
+  <action id="VcsShowNextChangeMarker">
+    <keyboard-shortcut first-keystroke="shift control alt PAGE_DOWN" />
+  </action>
+  <action id="VcsShowPrevChangeMarker">
+    <keyboard-shortcut first-keystroke="shift control alt PAGE_UP" />
+  </action>
+  <action id="liveedit.UpdateRunningApplication">
+    <keyboard-shortcut first-keystroke="alt S" />
+  </action>
+</keymap>
