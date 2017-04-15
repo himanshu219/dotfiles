@@ -25,11 +25,17 @@ sudo apt-get install vim
 sudo apt install unity-tweak-tool
 sudo apt-get install everpad
 sudo apt-get install wine
- pip install virtualenv
+
+#setting up python
  sudo apt-get install python-pip
- pip install virtualenv
- pip install virtualenvwrapper
+ sudo pip install virtualenv
+ sudo pip install virtualenvwrapper #if you don' t use sudo pip will install packages in .local
  sudo apt-get install ipython
+#in bashrc
+ export WORKON_HOME=~/.virtualenvs
+ source /home/darknight/.local/bin/virtualenvwrapper.sh
+ export PIP_VIRTUALENV_BASE=~/.virtualenvs
+
 sudo apt-get install bleachbit
 sudo apt install libavcodec-extra
 sudo apt install icedtea-8-plugin
@@ -86,4 +92,7 @@ sudo ln -snf /dev/null  org.gnome.evolution.dataserver.UserPrompter.service
 sudo apt-get install openssh-server openssh-client
 #installing gist with paste utility
 sudo apt-get install gist libapp-nopaste-perl
+
+sudo apt-get purge firefox*
+sudo apt-get purge thunderbird*
 
