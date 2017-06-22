@@ -1,0 +1,16 @@
+[
+	{ "keys": ["alt+q"],
+	 "command": "toggle_side_bar"
+	},
+	{ "keys": ["alt+r"], "command": "reindent"},
+  { "keys": ["ctrl+w"], "command": "expand_region" },
+  {
+      "keys": ["ctrl+shift+w"],
+      "command": "expand_region",
+      "args": {"undo": true},
+      "context": [{ "key": "expand_region_soft_undo" }]
+  },
+  { "keys": ["ctrl+d"], "command": "duplicate_line" },
+  { "keys": ["alt+shift+k"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["alt+k"], "command": "select_lines", "args": {"forward": true} },
+]
