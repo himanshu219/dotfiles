@@ -1,8 +1,6 @@
 [
-	{ "keys": ["alt+q"],
-	 "command": "toggle_side_bar"
-	},
-	{ "keys": ["alt+r"], "command": "reindent"},
+  { "keys": ["alt+q"], "command": "toggle_side_bar" },
+
   { "keys": ["ctrl+w"], "command": "expand_region" },
   {
       "keys": ["ctrl+shift+w"],
@@ -10,7 +8,24 @@
       "args": {"undo": true},
       "context": [{ "key": "expand_region_soft_undo" }]
   },
-  { "keys": ["ctrl+d"], "command": "duplicate_line" },
+
+  { "keys": ["alt+j"], "command": "duplicate_line" },
+  { "keys": ["ctrl+e"], "command": "eslint"},
+  //goback
+  { "keys": ["alt+left"], "command": "jump_back" },
+  { "keys": ["alt+right"], "command": "jump_forward" },
+  //multiple cursors
   { "keys": ["alt+shift+k"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+k"], "command": "select_lines", "args": {"forward": true} },
+  //emmet settings
+  {"keys": ["tab"], "command": "expand_abbreviation_by_tab", "context":
+    [
+      { "operand": "source.js", "operator": "equal", "match_all": true, "key": "selector" },
+      { "match_all": true, "key": "selection_empty" },
+      { "operator": "equal", "operand": false, "match_all": true, "key": "has_next_field" },
+      { "operand": false, "operator": "equal", "match_all": true, "key": "auto_complete_visible" },
+      { "match_all": true, "key": "is_abbreviation" }
+    ]
+  }
+
 ]
