@@ -105,3 +105,7 @@ Note: goto /etc/init/ and change the tty’s files that you DO NOT want. Edit th
 #decrease grub timeout
 sudo -i gedit /etc/default/grub
 edit the "GRUB_TIMEOUT" line, and run sudo update-grub
+
+#disable startup programs
+sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop #for displaying hiddenones
+
