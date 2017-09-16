@@ -96,3 +96,12 @@ sudo apt-get install gist libapp-nopaste-perl
 sudo apt-get purge firefox*
 sudo apt-get purge thunderbird*
 
+#remove unnecessary tty
+sudo vim /etc/default/console-setup
+Edit: ACTIVE_CONSOLES=”/dev/tty[1-3]“
+
+Note: goto /etc/init/ and change the tty’s files that you DO NOT want. Edit them and comment lines starting with “start on runlevel”. So, in this case, you’ll comment the start line in "tty4.conf" to "tty6.conf" files.
+
+#decrease grub timeout
+sudo -i gedit /etc/default/grub
+edit the "GRUB_TIMEOUT" line, and run sudo update-grub
