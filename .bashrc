@@ -144,7 +144,7 @@ alias lastinstalled='grep -e `date +%Y-%m-%d` /var/log/dpkg.log | awk '\''/insta
 alias changebkg='gsettings set org.gnome.desktop.background picture-uri file:///home/himanshu/Pictures/mywallpaper.png'
 alias gist='nopaste --private --service Gist'
 export GITHUB_USER="hp.iiita@gmail.com"
-export GITHUB_PASSWORD="hI13aN19hU"
+export GITHUB_PASSWORD="<password>"
 
 THEIP=$(ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1'|grep -v '192.168.122.1' | cut -d: -f2 | awk '{ print $1}')
 PS1="\[\033[1;31m\]\u@"$THEIP" \w $\[\033[00m\] ";
